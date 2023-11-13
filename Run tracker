@@ -1,0 +1,28 @@
+Rundata = [
+    [11, 12, 8, 0, 7, 0, 11],
+    [0, 0, 5, 6, 9, 0, 13],
+    [7, 6, 0, 8, 11, 9, 0],
+    [0, 9, 11, 12, 0, 0, 7],
+    [5, 0, 10, 0, 8, 9, 12] ]
+Target_Distance = int(input("Enter targer distance to beat :  "))
+No_rundays = 0
+week_num = 0
+for week in Rundata:
+    for day in week:
+        if day == 0:
+            No_rundays = No_rundays + 1
+
+print("The number of days you did not run is", No_rundays)
+with open("OUTPUT.TXT" "w") as x:
+    x.write(No_rundays)
+
+Target_Distance = int(input("Enter targer distance to beat :  "))
+
+for week in Rundata:
+    Sum = 0
+    count = count + 1
+    for day in Rundata:
+        toal_sum = Sum + day
+        average = (sum/ len(week)
+
+    print("week" + count + "average of the week is" + average + "total distance ran this week is" + sum)
