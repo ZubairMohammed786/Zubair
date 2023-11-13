@@ -1,0 +1,33 @@
+def LEFT(string,length):
+    return string[0:length]
+    pass
+
+String_1 = LEFT("Batman",3)
+print(String_1)
+
+def RIGHT(string,length):
+    return string[length::]
+    pass
+
+String_2 = RIGHT("Batman",3)
+print(String_2)
+
+
+String_3 = "Superman"
+#def MID (String_3,start,end):
+   # return string[(start + end)]
+   # pass
+#String_3 = MID(String_3,)
+
+def LENGTH (string):
+    return len(string)
+    pass
+
+String_4 = LENGTH("FLash")
+print(String_4)
+
+String_5 = "Harry"
+
+def LCASE (string):
+ return string.lower()
+ pass
