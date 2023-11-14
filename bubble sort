@@ -1,0 +1,18 @@
+temp = 0
+My_array = [4,5,1,9,18,2,3]
+i = 1
+j = 1
+step = 0
+print(My_array)
+Max_Index = len(My_array)
+n = Max_Index - 1
+for i in range(Max_Index - 1):
+    for j in range(n):
+        if My_array[j] > My_array[j +1]:
+            temp = My_array[j]
+            My_array[j]= My_array[j+1]
+            My_array[j+1] = temp
+    step = step + 1
+
+
+    print("STEP: ",step, My_array)
