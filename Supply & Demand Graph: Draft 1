@@ -1,0 +1,123 @@
+import turtle
+
+# hiding the curser
+#from turtle import hideturtle
+
+turtle.speed(8)
+
+from turtle import hideturtle
+hideturtle()
+
+turtle.setup(width=800, height=600)
+turtle.title("Supply & Demand")
+
+# vertical line down
+turtle.penup()
+turtle.goto(-180, 150)
+turtle.pendown()
+turtle.right(90)
+turtle.forward(350)
+
+# Horizontal line to the right
+turtle.left(90)
+turtle.forward(350)
+
+# Turn back to orgin 
+turtle.right(180)
+turtle.forward(350)
+
+
+# setting arrow to write "PRICE"
+turtle.penup()
+turtle.forward(70)
+turtle.right(90)
+turtle.forward(210)
+turtle.right(90)
+turtle.forward(55)
+turtle.right(90)
+
+
+#turtle.setheading(90)
+
+
+
+# Writing price
+from turtle import write
+write("P", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("R", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("I", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("C", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("E", align="center", font=("Cooper Black", 20, "normal"))
+
+# turtle.pendown()
+
+# Setting up arrow to write "Quantity"
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(120)
+
+# Writing "QUANTITY"
+
+write("Q", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("U", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("A", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("N", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("T", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("I", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("T", align="center", font=("Cooper Black", 20, "normal"))
+turtle.forward(25)
+write("Y", align="center", font=("Cooper Black", 20, "normal"))
+
+
+# code until now has given axes, and printed price and quanitity
+
+# Drawing up demand curve
+turtle.forward(71)
+turtle.left(90)
+turtle.forward(40)
+turtle.left(45)
+turtle.pendown()
+turtle.penup()
+turtle.forward(20)
+
+#Writing up demand between x-axis and rest of demand curve
+turtle.right(225)
+write("D", align="center", font=("Cooper Black",10, "normal"))
+turtle.left(225)
+turtle.forward(10)
+
+# rest of curve
+turtle.pendown()
+turtle.forward(450)
+
+
+#setting up arrow for supply curve
+turtle.penup()
+turtle.right(135)
+turtle.forward(330)
+turtle.right(135)
+
+#drawing supply curve 
+
+turtle.pendown()
+turtle.forward(450)
+
+#writing s for supply
+
+turtle.left(45)
+turtle.penup()
+turtle.forward(15)
+write("S", align="center", font=("Cooper Black",10, "normal"))
+
+
+
