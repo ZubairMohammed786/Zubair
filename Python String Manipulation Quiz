@@ -1,0 +1,149 @@
+# Quiz to test Python string handling knowledge
+
+# Question 1: Capitalize()
+word_a = "ascii"
+a = word_a.capitalize()
+
+# Printing question number
+print("Question 1:")
+
+# Asking the user for input
+input_1 = int(input("How many letters will be capitalized for 'ascii' if it goes through capitalize()? : "))
+if input_1 == 1:
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print(f"When 'ascii' goes through capitalize(), it will be changed to --> {a}")
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 1
+
+# Question 2: casefold()
+word_b = "Lebron is the GOAT"
+b = word_b.casefold()
+
+# Printing question number
+print("Question 2:")
+
+# Asking the user for input
+input_2 = input("Write out what 'Lebron is the GOAT' will be after it goes through casefold()? : ").strip().lower()
+if input_2 == "lebron is the goat":
+    print("Correct!")
+else:
+    print("\nIncorrect.")
+    print(f"When 'Lebron is the GOAT' goes through casefold(), it will be changed to --> {b}")
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 2
+
+# Question 3: count()
+word_c = """peter Piper picked a peck of pickled peppers.
+A peck of pickled peppers peter Piper picked.
+If peter Piper picked a peck of pickled peppers,
+Where’s the peck of pickled peppers peter Piper picked?"""
+
+c = word_c.count("peter")
+
+# Printing question number
+print("Question 3:")
+
+# Asking the user for input
+input_3 = int(input("A text is shown below:\n\npeter Piper picked a peck of pickled peppers.\nA peck of pickled peppers peter Piper picked.\nIf peter Piper picked a peck of pickled peppers,\nWhere’s the peck of pickled peppers peter Piper picked?\n\nHow many times does 'peter' appear in the text? : "))
+if input_3 == c:
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print(f"The number of times 'peter' appears in the text is {c}.")
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 3
+
+# Question 4: endswith()
+word_d = "There is no exquisite beauty… without some strangeness in the proportion"
+d = word_d.endswith(".")
+
+# Printing question number
+print("Question 4:")
+
+# Asking the user for input
+print("A text is shown below:")
+print(word_d)
+input_4 = input("\nIf the text goes through endswith('.'), will it be True or False? : ").strip().lower()
+if input_4 == "false":
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print("The text does not end with a full stop.")
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 4
+
+# Question 5: islower()
+word_e = "hello world!"
+e = word_e.islower()
+
+# Printing question number
+print("Question 5:")
+
+# Asking the user for input
+print("A text is shown below:")
+print(word_e)
+input_5 = input("\nIf the text goes through islower(), will it be True or False? : ").strip().lower()
+if input_5 == "true":
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print("The text is all lower case.")
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 5
+
+# Question 6: title()
+word_f = "Welcome to my world"
+f = word_f.title()
+
+# Printing question number
+print("Question 6:")
+
+# Asking the user for input
+print("A text is shown below:")
+print(word_f)
+input_6 = input("\nWhat will the output be if the text goes through title()? : ").strip().lower()
+if input_6 == f.lower():
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print("The text is:", f)
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 6
+
+# Question 7: swapcase()
+word_g = "WELcome"
+g = word_g.swapcase()
+
+# Printing question number
+print("Question 7:")
+
+# Asking the user for input
+print("A text is shown below:")
+print(word_g)
+input_7 = input("\nWhat will the output be if the text goes through swapcase()? : ").strip()
+if input_7 == g:
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print("It will be:", g)
+
+print("\n" + "-"*40 + "\n")  # Adding extra space after Question 7
+
+# Question 8: rindex()
+word_h = "Mi casa, su casa."
+h = word_h.rindex("casa")
+
+# Printing question number
+print("Question 8:")
+
+# Asking the user for input
+print("A text is shown below:")
+print(word_h)
+input_8 = input("\nWhat will the output be if the text goes through rindex('casa')? : ").strip()
+if int(input_8) == h:
+    print("Correct!")
+else:
+    print("Incorrect.")
+    print("It will be:", h)
