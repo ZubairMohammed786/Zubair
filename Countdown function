@@ -1,0 +1,12 @@
+# countdown for until the number reaches 0:
+
+def countdown(n):
+    if n <= 0: # base case, stops the loop from iterating endlessly 
+        print("Number has reached zero")
+        return # elminated loop once condition is fulfilled 
+    print(n)
+    countdown(n-1)
+    
+l = int(input("Enter a number you want to countdown until: "))
+print("\n")
+countdown(l)
