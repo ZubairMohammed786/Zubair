@@ -1,0 +1,46 @@
+# List Vital Stats:
+
+
+# Total = sum(List)
+# Min = min(List)
+# Max = max(List)
+# Length = len(List)++=≠≠≠
+# Average = sum(List)/len(List)
+
+# Making a function to find these stats for any list (inputted)
+
+
+def Make_List():
+    List = []
+    is_end = False
+    print("Enter 'end' when you reach final number: ","\n")
+    while is_end == False:
+        num = input("Enter Num:  ")
+        if num != 'end':
+            if num.isdigit():
+                List.append(int(num))
+        else:
+            is_end = True
+    if len(List) == 0:
+        return "EMPTY"
+    return List
+
+
+
+def Vital_Stats(List):
+    if List == "EMPTY":
+        print("No stats")
+        return
+    print("\nStats:  \n")
+    Total = sum(List)
+    Min = min(List)
+    Max = max(List)
+    Length = len(List)
+    Average = sum(List)/len(List)
+    Range = Max - Min
+    print(" Total:  ",Total,"\n","Min:    ",Min,"\n","Max:    ",Max,"\n","Length: ",Length,"\n","Average:",Average,"\n","Range:  ",Range)
+
+
+My_List = Make_List()
+print("\nList is: ",My_List)
+Vital_Stats(My_List)
